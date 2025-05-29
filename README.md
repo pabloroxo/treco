@@ -113,7 +113,7 @@ Infelizmente várias coisas aconteceram nesses três dias de realização do des
     - Adicionar transactions em todas as manipulações no banco de dados.
     - Criar exceptions específicas para cada tratamento de exceção.
     - Criar services para injetar nos controllers, e repositories para injetar nos services, todos com bindings com contracts, registrados no ServiceProvider, para separação de camadas.
-    - Criar testes unitários com um banco de dados em um ```.env``` à parte, rodando através do comando: ```php artisan test --env=testing```, com factories para criar registros.
+    - Criar testes unitários com um banco de dados em um ```.env.testing``` à parte, rodando através do comando: ```php artisan test --env=testing```, com factories para criar registros.
     - Criar autenticação com JWT ou o próprio Sanctum mesmo, guardando as rotas.
     - Criar seeders com exemplos de usuários, vendedores e vendas.
     - Adicionar tipos nos parâmetros e retornos dos métodos nas classes.
@@ -122,7 +122,9 @@ Infelizmente várias coisas aconteceram nesses três dias de realização do des
     - Utilização de um broker de mensageria, como o RabbitMQ, para enfileirar os pedidos de envio de e-mail e fazê-los oportunamente.
   - No frontend:
     - Criar tela de login e método de logout.
+    - Experimentar o Pinia para os states da aplicação.
     - Criar um CRUD de usuários administradores.
+    - Criar um CRUD para as taxas de comissões por período.
     - Utilizar tabelas com processamento server-side para aumentar a performance. Poderia ser o DataTables.
     - Utilizar um componente de lista com pesquisa, como o Select2.
     - Utilizar um componente de texto com máscara para valores monetários, como o v-money.
