@@ -10,55 +10,59 @@ Infelizmente várias coisas aconteceram nesses três dias de realização do des
 
     ```git clone https://github.com/pabloroxo/treco.git```
 
-2. Criar o arquivo de variáveis de ambiente:
+2. Acessar a pasta do projeto:
+
+    ```cd treco```
+ 
+3. Criar o arquivo de variáveis de ambiente:
 
     ```cp .env.example .env```
 
-3. Construir e executar os contêineres:
+4. Construir e executar os contêineres:
 
     ```docker-compose up --build -d```
 
-4. Acessar o contêiner do backend:
+5. Acessar o contêiner do backend:
 
     ```docker exec -it backend bash```
 
-5. Instalar as dependências do backend:
+6. Instalar as dependências do backend:
 
     ```composer install```
 
-6. Criar o arquivo de variáveis de ambiente:
+7. Criar o arquivo de variáveis de ambiente:
 
     ```cp .env.example .env```
 
-7. Gerar a chave única da aplicação:
+8. Gerar a chave única da aplicação:
 
     ```php artisan key:generate```
 
-8. Executar as migrations do banco de dados:
+9. Executar as migrations do banco de dados:
 
     ```php artisan migrate```
 
-9. Sair do contêiner do backend:
+10. Sair do contêiner do backend:
 
     ```exit```
 
-10. Acessar o contêiner do frontend:
+11. Acessar o contêiner do frontend:
 
     ```docker exec -it frontend bash```
 
-11. Instalar as dependências do frontend:
+12. Instalar as dependências do frontend:
 
     ```npm install```
 
-12. Criar o arquivo de variáveis de ambiente:
+13. Criar o arquivo de variáveis de ambiente:
 
     ```cp .env.example .env```
 
-13. Sair do contêiner do frontend:
+14. Sair do contêiner do frontend:
 
     ```exit```
 
-14. Abrir a página no navegador:
+15. Abrir a página no navegador:
 
     http://localhost:3000
 
